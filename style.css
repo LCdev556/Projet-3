@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bloc-phone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.emplacement-restaurant {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  flex-direction: column;
+}
+.introduction .introduction__titre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.introduction .introduction__sous-titre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.introduction .introduction__bouton {
+  align-self: center;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.footer .footer__titre {
+  font-size: 400;
+}
+.footer .footer__liste {
+  list-style-type: none;
+}
+
+.restaurants {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carte-restaurant {
+  width: 70%;
+  height: 251px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.carte-restaurant__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 231px;
+  box-sizing: border-box;
+  margin-top: -57px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}/*# sourceMappingURL=style.css.map */

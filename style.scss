@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    background-color: rgba(53, 53, 53, 1);
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .footer__titre{
+        font-size: 400;
+    }
+
+    .footer__liste{
+        list-style-type: none;
+    }
+
+
+}
