@@ -53,15 +53,19 @@ a {
   text-align: center;
   align-items: center;
   position: relative;
+  margin-bottom: 25px;
 }
 .fonctionnement .fonctionnement__numero {
-  text-align: center;
   width: 24px;
   height: 24px;
   background-color: #9356DC;
   position: absolute;
   left: -2.5%;
   border-radius: 23px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fonctionnement .fonctionnement__icon {
   color: #7E7E7E;
@@ -108,7 +112,7 @@ a {
   height: 50px;
   text-align: center;
   align-items: center;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(#9356dc -5.2%, #ff79da 110.74%) 0 4px 10px rgba(0, 0, 0, 0.2509803922);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-weight: 500;
   color: white;
@@ -149,25 +153,28 @@ a {
   height: 77px;
   display: flex;
   flex-direction: row;
+  padding-left: 3.8%;
+  padding-right: 5.3%;
+  width: 89%;
 }
 .carte-restaurant .carte-restaurant__texte {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 200px;
 }
 .carte-restaurant .carte-restaurant__titre {
   margin-top: 16px;
   margin-bottom: 0px;
   font-weight: 700;
   height: 20px;
-  width: 265px;
+  width: 100%;
 }
 .carte-restaurant .carte-restaurant__sous-titre {
   font-weight: 300;
   margin-top: 8px;
   margin-bottom: 19px;
   height: 24px;
-  width: 265px;
+  width: 100%;
 }
 .carte-restaurant .carte-restaurant__icon {
   width: 22px;
@@ -183,10 +190,12 @@ a {
   color: white;
 }
 .footer .footer__titre {
-  font-size: 400;
+  font-family: "Shrikhand";
+  padding-left: 4.9%;
 }
 .footer .footer__liste {
   list-style-type: none;
+  padding-left: 4.9%;
 }
 .footer .footer__icon {
   width: 12px;
