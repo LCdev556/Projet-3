@@ -32,6 +32,38 @@ a {
    
 }
 
+.section_titre{
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  align-self: start;
+  margin-left: 4.5%;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.new-badge{
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 4%;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+  .new-badge__txt{
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 14px;
+    color: #008766;
+  }
+}
+
 .emplacement-restaurant{
   
    font-size: 16px;
@@ -46,6 +78,57 @@ a {
     margin-right: 17px;
    }
 }
+
+
+
+.introduction{
+    
+    flex-direction: column;
+    background-color: #F6F6F6;
+    ;
+
+    .introduction__titre{
+        width: 62.5%;
+       font-weight: 700;
+       text-align: center;
+       align-self: center;
+       margin-left: 22px;
+       margin-right: 22px;
+       margin-top: 39px;
+       
+    }
+
+    .introduction__sous-titre{
+        font-weight: 300;
+        text-align: center;
+        align-self: center;
+        width: 84%;
+        font-size: 18px;
+        margin-top: 17px;
+    }
+        
+
+    .introduction__bouton{
+        align-self: center;
+        width: 62%;
+        border-radius: 25px;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        background: linear-gradient(-0.67deg, #9356dc -4.2%, #ff79da 110.74%);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+        color: white;
+        margin-top: 27px;
+        margin-bottom: 57px;
+        border: none;
+        
+        
+    }
+
+
+}
+
 
 .fonctionnement{
   height: 440px;
@@ -66,6 +149,10 @@ a {
   .fonctionnement__numero{
     width: 24px;
     height: 24px;
+    color: white;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 14px;
     background-color: #9356DC;
     position: absolute;
     left: -2.5%;
@@ -99,55 +186,6 @@ a {
   }
 }
 
-.introduction{
-    
-    flex-direction: column;
-    background-color: #F6F6F6;
-    ;
-
-    .introduction__titre{
-        width: 61.5%;
-       font-weight: 700;
-       text-align: center;
-       align-self: center;
-       margin-left: 22px;
-       margin-right: 22px;
-       margin-top: 39px;
-       
-    }
-
-    .introduction__sous-titre{
-        font-weight: 300;
-        text-align: center;
-        align-self: center;
-        width: 84%;
-        font-size: 18px;
-        margin-top: 17px;
-    }
-        
-
-    .introduction__bouton{
-        align-self: center;
-        width: 62%;
-        border-radius: 25px;
-        height: 50px;
-        text-align: center;
-        align-items: center;
-        background: linear-gradient(#9356dc -5.2%,#ff79da 110.74%);
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        font-weight: 500;
-        color: white;
-        margin-top: 27px;
-        margin-bottom: 57px;
-        
-    }
-
-
-}
-
-
-
-
 
 .restaurants{
     width: 100%;
@@ -155,7 +193,7 @@ a {
     flex-direction: column;
     background-color: #F6F6F6;
     padding-bottom: 70px;
-    padding-top: 55px;
+    padding-top: 50px;
 }
 
 .carte-restaurant{
@@ -218,6 +256,8 @@ a {
     
  
   }
+
+  
 
   input{
     position: absolute;
