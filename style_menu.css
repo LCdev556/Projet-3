@@ -42,6 +42,7 @@ a {
   position: relative;
   top: -43px;
   padding-top: 32px;
+  flex-direction: column;
 }
 .menu .menu__bouton {
   width: 30%;
@@ -94,8 +95,16 @@ a {
 .epd .epd__titre {
   font-weight: 300;
   font-size: 16px;
+  align-self: start;
+  margin-left: 6.5%;
+}
+.epd .epd__green-bare {
+  height: 0px;
+  width: 35px;
   align-self: baseline;
   margin-left: 3.5%;
+  margin-bottom: 12px;
+  border: 3px solid #99E2D0;
 }
 
 .plat {
@@ -145,11 +154,11 @@ a {
   list-style-type: none;
   padding-left: 4.9%;
 }
-.footer .footer__icon {
-  width: 12px;
-  height: 13px;
-  color: white;
-  margin-right: 10px;
+.footer .footer__icon-utensils {
+  margin-right: 9px;
+}
+.footer .footer__icon-handshake {
+  margin-right: 3px;
 }
 
 /* Document

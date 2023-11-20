@@ -256,11 +256,11 @@ a {
   list-style-type: none;
   padding-left: 4.9%;
 }
-.footer .footer__icon {
-  width: 12px;
-  height: 13px;
-  color: white;
-  margin-right: 10px;
+.footer .footer__icon-utensils {
+  margin-right: 9px;
+}
+.footer .footer__icon-handshake {
+  margin-right: 3px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
