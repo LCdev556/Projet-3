@@ -114,7 +114,7 @@ a {
 .fonctionnement .fonctionnement__etape {
   border-radius: 20px;
   height: 72.38px;
-  width: 323px;
+  width: 322.49px;
   background: rgb(246, 246, 246);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
@@ -131,7 +131,7 @@ a {
   font-size: 14px;
   background-color: #9356DC;
   position: absolute;
-  left: -2.5%;
+  left: -4%;
   border-radius: 23px;
   text-align: center;
   display: flex;
@@ -140,7 +140,8 @@ a {
 }
 .fonctionnement .fonctionnement__icon {
   color: #7E7E7E;
-  margin-right: 27px;
+  position: absolute;
+  left: 37px;
 }
 .fonctionnement .fonctionnement__icon .fonctionnement__icon--phone {
   width: 13px;
@@ -153,6 +154,7 @@ a {
 .fonctionnement .fonctionnement__icon .fonctionnement__icon--store {
   width: 18px;
   height: 18px;
+  color: #9356DC;
 }
 
 .restaurants {
@@ -255,6 +257,7 @@ a {
 .footer .footer__liste {
   list-style-type: none;
   padding-left: 4.9%;
+  line-height: 33px;
 }
 .footer .footer__icon-utensils {
   margin-right: 9px;

@@ -3,6 +3,7 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: 'roboto';
+    background-color: #F6F6F6;
 }
 
 
@@ -19,6 +20,28 @@ a {
     align-items: center;
 }
 
+.check-icon__label{
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+}
+
+.check-icon__input{
+  width: 92.77%;
+  height: 68px;
+  border: solid red;
+  position: absolute;
+  left: 3.6%;
+  opacity: 0;
+}
+
+.check-icon__input:checked + .check-icon__label{
+  width: 59px;
+}
+
 
 .header{
     height: 63px;
@@ -28,6 +51,13 @@ a {
         width: 197px;
         height: 36px;
 
+    }
+
+    .header__icon{
+      display: flex;
+      position: absolute;
+      left: 23px;
+  
     }
    
 }
@@ -62,7 +92,6 @@ a {
         font-weight: 500;
         color: white;
         margin-top: 27px;
-        margin-bottom: 57px;
         border: none;
         
     }
@@ -113,37 +142,44 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    width: 93%;
     .epd__titre{
         font-weight: 300;
         font-size: 16px;
         align-self: start;
-        margin-left: 6.5%;
-
     }
 
     .epd__green-bare{
       height: 0px;
       width:35px;
       align-self: baseline;
-      margin-left: 3.5%;
       margin-bottom: 12px;
       border: 3px solid #99E2D0
     }
 }
 
 .plat{
-    width: 85%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
     border-radius: 15px;
-    padding: 15px;
     margin-bottom: 12px;
+    overflow: hidden;
+
+    .plat__contenue{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
 
     .plat__text{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .plat__titre{
@@ -163,7 +199,8 @@ a {
         font-weight: 700;
         display: flex;
         align-items: end;
-
+        margin-right: 15px;
+        margin-bottom: 15px;
     }
 }
 
@@ -185,6 +222,7 @@ a {
     .footer__liste{
         list-style-type: none;
         padding-left: 4.9%;
+        line-height: 33px;
     }
 
     .footer__icon-utensils{
