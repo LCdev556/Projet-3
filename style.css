@@ -33,7 +33,7 @@ a {
   align-self: start;
   margin-left: 4.5%;
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .new-badge {
@@ -253,6 +253,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   padding-left: 4.9%;
+  margin-bottom: 0px;
 }
 .footer .footer__liste {
   list-style-type: none;
