@@ -231,6 +231,8 @@ a {
   color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
+  opacity: 0%;
+  transition: background-color 1s ease-out;
 }
 .carte-restaurant input:checked + label {
   background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);

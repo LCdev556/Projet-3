@@ -202,7 +202,22 @@ a {
     }
 }
 
+@keyframes heart-icon{
+  0%{
+    background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 
+   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-width: 0px;
+
+   scale: 0;
+  }
+
+  100%{
+    scale: 1.03;
+  }
+}
 
 .epd{
     flex-direction: column;
@@ -220,8 +235,22 @@ a {
       width:35px;
       align-self: baseline;
       margin-bottom: 12px;
-      border: 3px solid #99E2D0
+      border: 3px solid #99E2D0;
     }
+    
+    
+}
+
+.etr{
+      animation: loading-plat 4s normal linear;
+}
+
+.plt{
+  animation: loading-plat 5s normal linear;
+}
+
+.dsr{
+  animation: loading-plat 6s normal linear
 }
 
 .plat{
@@ -232,12 +261,6 @@ a {
     border-radius: 15px;
     margin-bottom: 12px;
     overflow: hidden;
-
-    .plat__contenue{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
 
     .plat__text{
         display: flex;
@@ -269,6 +292,22 @@ a {
         margin-bottom: 15px;
     }
 }
+
+@keyframes loading-plat{
+  0%{
+    opacity: 0%;
+  }
+
+ 80%{
+  opacity: 0%;
+ }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+
 
 .footer{
     width: 100%;
