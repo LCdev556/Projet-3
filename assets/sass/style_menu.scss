@@ -1,0 +1,300 @@
+@use 'responsive_mixin';
+@use 'user_agent_stylesheet_correction';
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'roboto';
+    background-color: #F6F6F6;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.centrage_bloc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.check-icon__label{
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  transition: all 300ms;
+}
+
+.check-icon__input{
+  width: 92.77%;
+  height: 68px;
+  border: solid red;
+  position: absolute;
+  left: 3.6%;
+  opacity: 0;
+}
+
+.check-icon__input:checked + .check-icon__label{
+  width: 59px;
+}
+
+
+
+.header{
+    height: 63px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 4px #00000026;
+
+
+    .header__logo{
+        width: 197px;
+        height: 36px;
+
+    }
+
+    .header__icon{
+      display: flex;
+      position: absolute;
+      left: 23px;
+  
+    }
+   
+}
+
+.presentation{
+  height: 275px;
+  overflow: hidden;
+  .presentation__image{
+    scale:1.1;
+    overflow: hidden;
+  }
+}
+
+
+.menu{
+    background-color: #F6F6F6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    top:-43px;
+    padding-top: 32px;
+    flex-direction: column;
+
+    .menu__bouton{
+        width: 186px;
+        border-radius: 25px;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        background: linear-gradient(-0.67deg, #9356dc -4.2%, #ff79da 110.74%);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+        color: white;
+        margin-top: 27px;
+        border: none;
+        
+    }
+
+    .menu__bouton:hover{
+      opacity: 80%;
+      box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.titre{
+    
+    .titre__nom-restaurant{
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        font-size: 28px;
+        margin: unset;
+    }
+
+    .heart-icon{
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+    }
+    
+    .heart-icon-wht{
+      color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    opacity: 100%;
+    position: absolute;
+    }
+
+    .heart-icon-wht:hover + .heart-icon-clr{
+      scale:1.12;
+      opacity: 100;
+    }
+
+    .heart-icon-clr:hover{
+      scale:1.12;
+      opacity: 100;
+    }
+
+
+    .heart-icon-clr{
+      background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color:white;
+      -webkit-text-stroke-width: 0px;
+      scale: 0;
+      opacity: 0;
+      position: absolute;
+      transition: scale 500ms;
+  }
+}
+
+.epd{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 93%;
+    .epd__titre{
+        font-weight: 300;
+        font-size: 16px;
+        align-self: start;
+    }
+
+    .epd__green-bare{
+      height: 0px;
+      width:35px;
+      align-self: baseline;
+      margin-bottom: 12px;
+      border: 3px solid #99E2D0;
+    }
+    
+    
+}
+
+.etr{
+      animation: loading-plat 500ms normal linear;
+}
+
+.plt{
+  animation: loading-plat 1s normal linear;
+}
+
+.dsr{
+  animation: loading-plat 2s normal linear
+}
+
+.plat{
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    overflow: hidden;
+
+    .plat__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    }
+
+    .plat__titre{
+        
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+
+    .plat__description{
+        font-weight: 300;
+        font-size: 15px;
+        margin: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+
+    .plat__prix{
+        font-weight: 700;
+        display: flex;
+        align-items: end;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        padding-left: 15px;
+    }
+
+
+@keyframes loading-plat{
+  0%{
+    opacity: 0%;
+  }
+
+ 50%{
+  opacity: 0%;
+ }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+
+
+.footer{
+    width: 100%;
+    background-color: rgba(53, 53, 53, 1);
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .footer__titre{
+        
+        font-family: 'Shrikhand'; 
+        font-weight: 400;
+        font-size: 18px;
+        padding-left: 4.9%;
+        margin-bottom: 0px;
+    }
+
+    .footer__liste{
+        list-style-type: none;
+        padding-left: 4.9%;
+        line-height: 33px;
+    }
+
+    .footer__icon-utensils{
+      margin-right: 9px;
+      
+    }
+    .footer__icon-handshake{
+      margin-right: 3px;
+    }
+    
+}
+
+
+
