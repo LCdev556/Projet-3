@@ -1,7 +1,11 @@
 @use 'responsive_mixin';
 @use 'user_agent_stylesheet_correction';
 
-
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
 
 body {
     display: flex;
@@ -92,6 +96,11 @@ a {
     padding-top: 32px;
     flex-direction: column;
 
+    @include respond-to('large') {
+      width: 74%;
+      align-self: center;
+    }
+
     .menu__bouton{
         width: 186px;
         border-radius: 25px;
@@ -165,6 +174,11 @@ a {
     align-items: center;
     margin-top: 40px;
     width: 93%;
+
+    @include respond-to('large') {
+      width: 60%;
+    }
+
     .epd__titre{
         font-weight: 300;
         font-size: 16px;
@@ -271,6 +285,11 @@ a {
     flex-direction: column;
     color: white;
 
+    @include respond-to('large') {
+      height: 114px;
+      flex-direction: row-reverse;
+    }
+
     .footer__titre{
         
         font-family: 'Shrikhand'; 
@@ -278,12 +297,27 @@ a {
         font-size: 18px;
         padding-left: 4.9%;
         margin-bottom: 0px;
+
+        @include respond-to('large') {
+          align-self: self-end;
+          margin-right: 5%;
+          margin-bottom: 23px;
+        }
     }
 
     .footer__liste{
         list-style-type: none;
         padding-left: 4.9%;
         line-height: 33px;
+        @include respond-to('large') {
+          display: flex;
+          align-self: end;
+          gap: 22px;
+        }
+    }
+
+    .footer__elements-liste{
+      height: 14px;
     }
 
     .footer__icon-utensils{
