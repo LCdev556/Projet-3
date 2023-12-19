@@ -390,6 +390,8 @@ a {
   .menu {
     width: 74%;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .menu .menu__bouton {
