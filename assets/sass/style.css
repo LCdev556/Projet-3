@@ -643,7 +643,7 @@ a {
   opacity: 100;
 }
 .carte-restaurant .heart-icon-clr:hover {
-  transform: scale(1.11);
+  transform: scale(1.41);
   opacity: 100;
 }
 .carte-restaurant .heart-icon-clr {
@@ -657,7 +657,7 @@ a {
   position: absolute;
   top: 205px;
   right: 7%;
-  transition: scale 500ms;
+  transition: all 500ms;
 }
 
 .footer {

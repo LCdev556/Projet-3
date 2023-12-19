@@ -365,6 +365,7 @@ a {
   display: flex;
   position: absolute;
   left: 23px;
+  transform: scale(1.5);
 }
 
 .presentation {
@@ -430,13 +431,14 @@ a {
   -webkit-text-stroke-width: 1px;
   opacity: 100%;
   position: absolute;
+  transform: scale(1.3);
 }
 .titre .heart-icon-wht:hover + .heart-icon-clr {
-  transform: scale(1.12);
+  transform: scale(1.41);
   opacity: 100;
 }
 .titre .heart-icon-clr:hover {
-  transform: scale(1.12);
+  transform: scale(1.41);
   opacity: 100;
 }
 .titre .heart-icon-clr {
@@ -448,7 +450,7 @@ a {
   transform: scale(0);
   opacity: 0;
   position: absolute;
-  transition: scale 500ms;
+  transition: all 500ms;
 }
 
 .epd {
