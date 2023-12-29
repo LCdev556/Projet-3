@@ -2,14 +2,18 @@
 <html lang="fr">
 
 <head>
+    <!-- Set charset to UTF-8 -->
     <meta charset="UTF-8">
     <title>Ohmyfood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Preconnect GoogleApis fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load FontAwesome library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Load Montserrat, Manrope,Roboto and shrikand fonts families  -->
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Raleway:wght@700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
@@ -19,12 +23,11 @@
 </head>
 
 <body>
-
-
     <header class="centrage_bloc header">
         <div class="header__icon">
             <a href="../index.html"><i class="fa-solid fa-arrow-left "></i></a>
         </div>
+
         <img class="header__logo" alt="logo ohmyfood" src="../assets/images/logo/ohmyfood.png" />
     </header>
 
@@ -34,151 +37,177 @@
     </div>
 
     <main>
-
         <div class="centrage_bloc menu">
             <div class="centrage_bloc titre">
                 <h1 class="titre__nom-restaurant">La palette du goût</h1>
+
                 <div class="heart-icon">
                     <i class="heart-icon-wht fa-solid fa-heart"></i><i class="heart-icon-clr fa-solid fa-heart"></i>
                 </div>
             </div>
 
-
+            <!-- meal starter div -->
             <div class="centrage_bloc epd etr">
 
                 <h2 class="epd__titre">ENTREES</h2>
+
                 <div class="epd__green-bare"></div>
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Fricassée d'escargots</h2>
+                        <h3 class="plat__titre">Fricassée d'escargots</h3>
+
                         <p class="plat__description">Au piment d'Espelette</p>
                     </div>
-                    <div class="plat__prix">25€</div>
+
+                    <div class="plat__prix"> 25€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon1" />
-                    <label class="check-icon__label" for="check_icon1"><i class="fa-solid fa-circle-check"></i></label>
-                </article>
 
+                    <label class="check-icon__label" for="check_icon1">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </label>
+                </article>
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Foie gras de canard mi-cuit</h2>
+                        <h3 class="plat__titre">Foie gras de canard mi-cuit</h3>
+
                         <p class="plat__description">Et ses copeaux de truffe noire</p>
                     </div>
+
                     <div class="plat__prix">35€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon2" />
+
                     <label class="check-icon__label" for="check_icon2"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
-
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">oeuf au plat</h2>
+                        <h3 class="plat__titre">oeuf au plat</h3>
+
                         <p class="plat__description">Assaisonné à la truffe sur lit de caviar</p>
                     </div>
+
                     <div class="plat__prix">20€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon3" />
+
                     <label class="check-icon__label" for="check_icon3"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
 
             </div>
 
+            <!-- main course div -->
             <div class="centrage_bloc epd plt">
 
                 <h2 class="epd__titre">PLATS</h2>
+
                 <div class="epd__green-bare"></div>
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Filet de boeuf aux herbes</h2>
+                        <h3 class="plat__titre">Filet de boeuf aux herbes</h3>
+
                         <p class="plat__description">Accompagné de sa rimbambelle de légumes</p>
                     </div>
+
                     <div class="plat__prix">40€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon4" />
+
                     <label class="check-icon__label" for="check_icon4"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
 
-
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Parmentier de queue de boeuf</h2>
+                        <h3 class="plat__titre">Parmentier de queue de boeuf</h3>
+
                         <p class="plat__description">À la truffe noire sur sa purée de panais</p>
                     </div>
+
                     <div class="plat__prix">35€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon5" />
+
                     <label class="check-icon__label" for="check_icon5"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
-
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Filet de turbot</h2>
+                        <h3 class="plat__titre">Filet de turbot</h3>
+
                         <p class="plat__description">Aux agrumes</p>
                     </div>
+
                     <div class="plat__prix">44€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon6" />
+
                     <label class="check-icon__label" for="check_icon6"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
 
 
             </div>
 
+            <!-- dessert div -->
             <div class="centrage_bloc epd dsr">
 
                 <h2 class="epd__titre">DESSERTS</h2>
+
                 <div class="epd__green-bare"></div>
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Paris-brest</h2>
+                        <h3 class="plat__titre">Paris-brest</h3>
+
                         <p class="plat__description">Revisité</p>
                     </div>
+
                     <div class="plat__prix">18€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon7" />
+
                     <label class="check-icon__label" for="check_icon7"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
 
-
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Macaron au chocolat d'exeption</h2>
+                        <h3 class="plat__titre">Macaron au chocolat d'exeption</h3>
+
                         <p class="plat__description">Et glace à la vanille de Madagascar</p>
                     </div>
+
                     <div class="plat__prix">22€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon8" />
+
                     <label class="check-icon__label" for="check_icon8"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
-
 
                 <article class="plat">
 
                     <div class="plat__text">
-                        <h2 class="plat__titre">Mousse au chocolat</h2>
+                        <h3 class="plat__titre">Mousse au chocolat</h3>
+
                         <p class="plat__description">Au piment d'Espelette et à la truffe noire</p>
                     </div>
+
                     <div class="plat__prix">23€</div>
 
                     <input class="check-icon__input" type="checkbox" name="check_icon" id="check_icon9" />
+
                     <label class="check-icon__label" for="check_icon9"><i class="fa-solid fa-circle-check"></i></label>
                 </article>
-
-
             </div>
 
             <button class="centrage_bloc menu__bouton">Commander</button>
@@ -186,17 +215,27 @@
         </div>
 
     </main>
+    <!-- Footer section -->
     <footer class="footer">
         <h3 class="footer__titre">ohmyfood</h3>
         <ul class="footer__liste">
-            <li class="footer__elements-liste"><i class="footer__icon-utensils fa-solid fa-utensils"></i>Proposer un
-                restaurant</li>
-            <li class="footer__elements-liste"><i class="footer__icon-handshake fa-solid fa-handshake-angle"></i>Devenir
-                partenaire</li>
-            <li class="footer__elements-liste footer__elements-liste--space">Mentions légales</li>
-            <li class="footer__elements-liste"><a href="mailto:ohmyfood@contact.com">Contact</a></li>
+            <li class="footer__elements-liste">
+                <i class="footer__icon-utensils fa-solid fa-utensils"></i>Proposer un restaurant
+            </li>
 
+            <li class="footer__elements-liste">
+                <i class="footer__icon-handshake fa-solid fa-handshake-angle"></i>Devenir partenaire
+            </li>
+
+            <li class="footer__elements-liste footer__elements-liste--space">
+                Mentions légales
+            </li>
+
+            <li class="footer__elements-liste">
+                <a href="mailto:ohmyfood@contact.com">Contact</a>
+            </li>
         </ul>
     </footer>
 
 </body>
+</html>
