@@ -2,4 +2,4 @@
 
 - utilisation de sass/scss
 - utilisation de la methodologie BEM
-- fichier ressortant sans erreurs au teste W3C
+- fichiers ressortant sans erreurs au teste W3C
